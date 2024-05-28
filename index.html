@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.E.S.M.A.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logosmall.png">
+</head>
+<body>
+    <nav>
+        <div id="logo"></div>
+        <div id="links">        
+            <a class="navlink" id="home" href="#">Home</a>
+            <a class="navlink" id="profile" href="page2.html">Profile</a>
+            <a class="navlink" id="donate" href="#">Donate</a>
+            <div id="smalllinks">
+                <a class="smalllink" id="signup" href="index.html">Sign Up</a>
+                <a class="smalllink" id="aboutus" href="#">About Us</a>
+            </div>
+        </div>
+    </nav>
+    <section id="s1">
+        <div id="slideshow">
+            <div id="slideshowimg"></div>
+            <div id="slideshowctrl">
+                <button id="left" onclick="leftButton()"></button>
+                <div id="imgnum">
+                    <div class="imgcount" id="img1"></div>
+                    <div class="imgcount" id="img2"></div>
+                    <div class="imgcount" id="img3"></div>
+                    <div class="imgcount" id="img4"></div>
+                    <div class="imgcount" id="img5"></div>
+                </div>
+                <button id="right" onclick="rightButton()"></button>
+            </div>
+        </div>
+        <div id="s1desc">
+            <p id="s1description">R.E.S.M.A. (Restoring the Environment, Saving My Atmosphere) is a project which focuses on addressing and giving information about one of today’s largest problems, climate change. Help us in our endeavours today, as we keep the Earth a better place to live in.</p>
+        </div>
+        <div id="signupsheet">
+            <form id="sign-in-form">
+                <fieldset id="sign-in-fs">
+                    <div id="sign-in-header">
+                        <h1 id="sign-in-header1">Sign Up</h1>
+                        <span id="sign-in-subheader"> It's to help our cause.</span>
+                        <hr>
+                    </div>
+                    
+                    <input type="text" class="sign-in-input-name" id="sign-in-firstname" value="First Name" onfocus="firstnamefunction_focus()" onblur="firstnamefunction_blur()">
+                    <input type="text" class="sign-in-input-name" id="sign-in-lastname" value="Last Name" onfocus="lastnamefunction_focus()" onblur="lastnamefunction_blur()"><br>
+                    <span id="firstname-check"></span><span id="lastname-check"></span><br>
+        
+                    <fieldset id="radio-fieldset" onclick="radiobutton_checking()">
+                        <input type="radio" id="sign-in-radio-button1" name="gender" value="Male">
+                        <label for="sign-in-radio-button1">Male</label>
+                    
+                        <input type="radio" id="sign-in-radio-button2" name="gender" value="Female">
+                        <label for="sign-in-radio-button2">Female</label>
+                    
+                        <input type="radio" id="sign-in-radio-button3" name="gender" value="Prefer not to say">
+                        <label for="sign-in-radio-button3">Prefer not to say</label>
+                    </fieldset>
+        
+                    
+                    <input type="text" class="sign-in-input" id="sign-in-contact" value="Contact Number" onfocus="contactfunction_focus()" onblur="contactfunction_blur()"> <br>
+                    <span id="gender-check"></span><span id="contact-check"></span><br>
+        
+                    <input type="text" class="sign-in-input" id="sign-in-email" value="Email" onfocus="emailfunction_focus()" onblur="emailfunction_blur()">
+                    <input type="text" class="sign-in-input" id="sign-in-password" value="Password" onfocus="passwordfunction_focus()" onblur="passwordfunction_blur()"><br>
+                    <span id="email-check"></span> <span id="password-check"></span><br>
+        
+                    <textarea name="sign-in-textarea" class="sign-in-input" id="sign-in-textarea" onfocus="textareafunction_focus()" onblur="textareafunction_blur()">Why do you want to support this campaign?</textarea><br>
+                    <span id="textarea-check"></span><br>
+        
+                    <button type="submit" value="Sign In" id="sign-in-submit" onclick="return submitfunction()">Sign Up</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <section id="s2">
+        <div class="s2container">
+            <div class="s2main" id="s21">
+                <div id="s21img"></div>
+                <p class="stitle" id="s21title">What is R.E.S.M.A?</p>
+                <div class="sdesc" id="s21desc">R.E.S.M.A. (Restoring the Environment, Saving My Atmosphere) is a project which focuses on addressing and giving information about one of today’s largest problems, climate change. R.E.S.M.A. is a project which helps people learn how to combat climate change even in the smallest ways like cleaning up an environment, etc. R.E.S.M.A was made by 3 students from PSHS-SMC.</div>
+            </div>
+            <div class="s2main" id="s22">
+                <div id="s22img"></div>
+                <p class="stitle" id="s22title">Why should you advocate for R.E.S.M.A?</p>
+                <div class="sdesc" id="s22desc">Advocating and sharing information about R.E.S.M.A. will help other people know about our cause to fight against climate change. R.E.S.M.A. aims to help promote our fight against climate change to help keep our Earth stable and a safe planet to live in. Advocating about R.E.S.M.A. also helps you get to connect to more people who also advocated to R.E.S.M.A.</div>
+            </div>
+            <div class="s2main" id="s23">
+                <div id="s23img"></div>
+                <p class="stitle" id="s23title">How do you advocate for R.E.S.M.A?</p>
+                <div class="sdesc" id="s23desc">To advocate for R.E.S.M.A., you should go to our website (insert website link here). You should create an account and R.E.S.M.A will provide you with more information about climate change and what you can do to help even in the smallest way. After that, you have successfully advocated for R.E.S.M.A.!</div>
+            </div>
+        </div>
+
+    </section>
+    <section id="s3">
+        <div id="s3logo" src="logowhite.png"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
