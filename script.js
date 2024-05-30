@@ -1,7 +1,15 @@
 var imagecounter = 1;
+
 document.getElementById("slideshowimg").style.backgroundImage = "url(img1.jpg)";
 document.getElementById("img1").style.opacity = 1;
 
+function checkAccount(){
+    if (localStorage.getItem("FirstName") == null){
+        alert("Sorry, but please sign in first.")
+    } else {
+        location.href = "page2.html";
+    }
+}
 function checkImage(){
     if (imagecounter == 0){
         imagecounter = 5;
@@ -337,4 +345,16 @@ function getAccount(){
         document.getElementById("gender").innerHTML = "-";
     }
     
+}
+
+function logout(){
+    localStorage.removeItem("FirstName");
+    localStorage.removeItem("LastName");
+    localStorage.removeItem("Contact");
+    localStorage.removeItem("Email");
+    localStorage.removeItem("Password");
+    localStorage.removeItem("Gender");
+    localStorage.removeItem("Textarea");
+
+    location.href = "index.html";
 }

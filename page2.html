@@ -11,8 +11,8 @@
     <nav>
         <div id="logo"></div>
         <div id="links">        
-            <a class="navlink" id="home" href="#">Home</a>
-            <a class="navlink" id="profile" href="page2.html">Profile</a>
+            <a class="navlink" id="home" href="page1.html">Home</a>
+            <a class="navlink" id="profile" onclick="checkAccount()">Profile</a>
             <a class="navlink" id="donate" href="#">Donate</a>
             <div id="smalllinks">
                 <a class="smalllink" id="signup" href="index.html">Sign Up</a>
@@ -25,7 +25,7 @@
         <h1 id="wc">welcome, <span id="fn"></span></h1>
         <div id="s12container">
             <div id="sidebar">
-                <div id="logout">Log Out</div>
+                <div id="logout" onclick="logout()">Log Out</div>
             </div>
             <p id="abylabel">ABOUT YOU</p>
             <p id="namelabel">NAME</p>

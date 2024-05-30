@@ -584,6 +584,10 @@ input::-webkit-inner-spin-button {
 
 #sp{
     margin-left: 1vh;
+    margin-top: 1vh;
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 0.8;
 }
 
 #gender{
@@ -616,5 +620,114 @@ input::-webkit-inner-spin-button {
 #logout:hover{
     background:#000000;
     color:#ffffff;
+    transition: 0.2s;
+}
+
+#background-video{
+    height: 90vh;
+    width: 100vw;
+    object-fit: cover;
+    float: left;
+    position: absolute;
+    z-index: -1;
+}
+
+#slogan{
+    font-size: 5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    padding-top: 20vh;
+    margin-left: 5vw;
+    line-height: 0.8;
+    width: 50vw;
+    color: white;
+    text-shadow: 2px 4px 8px rgba(0,0,0,0.18);
+}
+#subtext{
+    font-size: 2em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding-top: 2vh;
+    margin-left: 5vw;
+    line-height: 0.9;
+    width: 50vw;
+    color: white;
+    text-shadow: 2px 4px 8px rgba(0,0,0,0.18);
+}
+
+#subtext{
+    font-size: 2em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding-top: 2vh;
+    margin-left: 5vw;
+    line-height: 0.9;
+    width: 50vw;
+    color: white;
+    text-shadow: 2px 4px 8px rgba(0,0,0,0.18);
+}
+
+#redir{
+    font-size: 1.5em;
+    padding: 2vh;
+    background-color:rgb(151, 204, 111);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding-top: 2vh;
+    margin-left: 5vw;
+    line-height: 0.9;
+    width: 50vw;
+    color: white;
+    text-shadow: 2px 4px 8px rgba(0,0,0,0.18);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+#redir:hover{
+    font-size: 2em;
+    transition: 0.2s;
+}
+
+.s2h{
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(235,251,224,1) 100%);
+    height: 22vh;
+    width: 95vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+
+#s2h1{
+    padding-top: 1vh;
+}
+
+.s2hp{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    padding: 1vh;
+    padding-left: 2vh;
+}
+
+.s2hp2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.6em;
+    margin-top: -1vh;
+    padding-left: 2vh;
+}
+
+#redir2{
+    font-size: 1.5em;
+    padding: 1.5vh;
+    background-color:rgb(151, 204, 111);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-left: 1vw;
+    line-height: 0.9;
+    width: 50vw;
+    color: white;
+    text-shadow: 2px 4px 8px rgba(0,0,0,0.18);
+    border-radius: 5px;
     transition: 0.2s;
 }
